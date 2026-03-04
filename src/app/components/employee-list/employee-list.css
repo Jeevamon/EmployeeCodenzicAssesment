@@ -1,0 +1,9 @@
+table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #343a40;
+  color: white;
+}

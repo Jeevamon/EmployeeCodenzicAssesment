@@ -1,0 +1,33 @@
+<div style="display:flex; justify-content:center; align-items:center; height:100vh; background:linear-gradient(135deg,#667eea,#764ba2);">
+
+  <div style="background:white; padding:30px; border-radius:15px; width:400px; box-shadow:0 10px 30px rgba(0,0,0,0.2);">
+
+    <h2 style="text-align:center; margin-bottom:20px; color:#333;">Add Employee</h2>
+
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+
+      <input type="text" placeholder="Name" formControlName="name"
+        style="width:100%; padding:10px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; outline:none;">
+
+      <input type="email" placeholder="Email" formControlName="email"
+        style="width:100%; padding:10px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; outline:none;">
+
+      <input type="text" placeholder="Department" formControlName="department"
+        style="width:100%; padding:10px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; outline:none;">
+
+      <input type="text" placeholder="Designation" formControlName="designation"
+        style="width:100%; padding:10px; margin-bottom:15px; border-radius:8px; border:1px solid #ccc; outline:none;">
+
+      <input type="number" placeholder="Salary" formControlName="salary"
+        style="width:100%; padding:10px; margin-bottom:20px; border-radius:8px; border:1px solid #ccc; outline:none;">
+
+     <button type="submit"
+  style="width:100%; padding:10px; border:none; border-radius:8px; background-color:#4e73df; color:white; font-weight:bold;">
+  {{ isEditMode ? 'Update Employee' : 'Add Employee' }}
+</button>
+
+    </form>
+
+  </div>
+
+</div>
